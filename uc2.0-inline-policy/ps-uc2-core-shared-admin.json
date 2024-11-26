@@ -1,0 +1,43 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Deny",
+            "Action": [
+                "iam:CreateUser",
+                "iam:CreateGroup",
+                "iam:DeleteGroup",
+                "iam:DeleteUser",
+                "sso:*",
+                "ce:*",
+                "ec2:TerminateInstances",
+                "elasticloadbalancing:DeleteLoadBalancer",
+                "rds:DeleteDBInstance",
+                "rds:DeleteDBCluster",
+                "rds:DeleteCustomDBEngineVersion",
+                "rds:DeleteDBClusterEndpoint",
+                "rds:DeleteDBClusterParameterGroup",
+                "rds:DeleteDBClusterSnapshot",
+                "rds:DeleteDBInstanceAutomatedBackup",
+                "rds:DeleteDBParameterGroup",
+                "rds:DeleteDBProxy",
+                "rds:DeleteDBProxyEndpoint",
+                "rds:DeleteGlobalCluster",
+                "rds:DeleteEventSubscription",
+                "rds:DeleteDBSubnetGroup",
+                "rds:DeleteDBSnapshot",
+                "rds:DeleteDBSecurityGroup",
+                "rds:DeleteOptionGroup",
+                "kms:ScheduleKeyDeletion",
+                "kms:DeleteImportedKeyMaterial",
+                "kms:DeleteCustomKeyStore",
+                "s3:DeleteBucket"
+
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}

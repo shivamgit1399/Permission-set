@@ -1,0 +1,62 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Deny",
+            "Action": [
+                "controltower:DeregisterManagedAccount",
+                "controltower:DeregisterOrganizationalUnit",
+                "controltower:DisableGuardrail",
+                "controltower:UpdateAccountFactoryConfig",
+                "organizations:AttachPolicy",
+                "organizations:CloseAccount",
+                "organizations:DeleteOrganizationalUnit",
+                "organizations:DeleteOrganization",
+                "organizations:DeletePolicy",
+                "organizations:DeregisterDelegatedAdministrator",
+                "organizations:DetachPolicy",
+                "organizations:UpdateOrganizationalUnit",
+                "ce:*",
+                "ec2:AttachInternetGateway",
+                "ec2:DeleteInternetGateway",
+                "ec2:CreateDefaultVpc",
+                "ec2:CreateVpc",
+                "ec2:DeleteVpc",
+                "ec2:CreateRouteTable",
+                "ec2:DeleteRouteTable",
+                "ec2:CreateTransitGateway",
+                "ec2:DeleteTransitGateway",
+                "elasticloadbalancing:DeleteLoadBalancer",
+                "rds:DeleteDBInstance",
+                "rds:DeleteDBCluster",
+                "rds:DeleteCustomDBEngineVersion",
+                "rds:DeleteDBClusterEndpoint",
+                "rds:DeleteDBClusterParameterGroup",
+                "rds:DeleteDBClusterSnapshot",
+                "rds:DeleteDBInstanceAutomatedBackup",
+                "rds:DeleteDBParameterGroup",
+                "rds:DeleteDBProxy",
+                "rds:DeleteDBProxyEndpoint",
+                "rds:DeleteGlobalCluster",
+                "rds:DeleteEventSubscription",
+                "rds:DeleteDBSubnetGroup",
+                "rds:DeleteDBSnapshot",
+                "rds:DeleteDBSecurityGroup",
+                "rds:DeleteOptionGroup",
+                "kms:ScheduleKeyDeletion",
+                "kms:DeleteImportedKeyMaterial",
+                "kms:DeleteCustomKeyStore",
+                "s3:DeleteBucket",
+                "iam:CreateUser",
+                "iam:CreateGroup",
+                "iam:DeleteGroup",
+                "transfer:DeleteServer",
+                "transfer:DeleteUser"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}

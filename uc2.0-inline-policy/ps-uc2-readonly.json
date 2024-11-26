@@ -1,0 +1,33 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Deny",
+            "Action": [
+                "s3:CreateBucket",
+                "s3:DeleteBucket",
+                "s3:PutBucketPublicAccessBlock",
+                "ec2:DeleteFlowLogs",
+                "ec2:CreateInternetGateway",
+                "ec2:AttachInternetGateway",
+                "ec2:Delete*",
+                "ec2:Modify*",
+                "rds:Create*",
+                "rds:Delete*",
+                "iam:Create*",
+                "iam:Delete*",
+                "ec2:AttachVolume",
+                "ec2:Create*",
+                "ec2:DetachVolume",
+                "autoscaling:Delete*",
+                "rds:Modify*",
+                "organizations:Create*",
+                "organizations:Detach*",
+                "organizations:Delete*",
+                "organizations:LeaveOrganization",
+                "organizations:MoveAccount"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
